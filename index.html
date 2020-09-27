@@ -4,6 +4,9 @@
 	<meta charset=utf-8>
 	<title>My first three.js app</title>
 	<style>
+		html {
+			overflow: hidden;
+		}
 		body {
 			margin: 0;
 		}
@@ -13,14 +16,14 @@
 			height: 100%
 		}
 	</style>
+	<script src="../lib/three.js-master/build/three.js"></script>
+	<script src="../lib/three.js-master/examples/jsm/controls/TrackballControls.js"></script>
+	<script src="./tutorialJS/1-1.js"></script>
 </head>
 <body>
-	<script src="../lib/three.js-master/build/three.js"></script>
-	<script src="../lib/three.js-master/examples/jsm/controls/TrackballControls.js"
-	<script src="./create.js"></script>
+	<div id="webgl-output"></div>
 	<script>
-		console.log(typeof THREE);
-		document.addEventListener("DOMContentLoaded", () => {makeAnimation(THREE)})
-		</script>
+		(()=>{init()})();
+	</script>
 </body>
 </html>
